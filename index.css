@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400,700&display=swap');
 @font-face {
     font-family:'Kpwb';
     font-style:normal;
@@ -17,10 +18,10 @@ body{
     padding:20px;
     background-color:#FAFAFA;
     color:#424242;
-    font-family:'Kpwb';
+    font-family:'Noto Serif TC','Kpwb';
 }
 pre{
     padding:0;
     margin-bottom:20px;
-    font-family:'Kpwb';
+    font-family:'Noto Serif TC','Kpwb';
 }
