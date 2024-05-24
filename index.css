@@ -25,3 +25,32 @@ pre{
     margin-bottom:20px;
     font-family:'Kpwb','Noto Serif TC';
 }
+.showing{
+    color:#424242:
+}
+.showing:hover{
+    color:#50C896:
+}
+.showing:hover+.showed{
+    display:block;
+    position:absolute;
+    background-color:#FAFAFA;
+    padding:5px;
+    font-size:14px;
+    color:#505050;
+    border-radius:5px;
+    box-shadow:2px 2px 4px #42424242;
+}
+.showed{
+    display:none;
+}
+.showed:hover{
+    display:block;
+    position:absolute;
+    background-color:#FAFAFA;
+    padding:5px;
+    font-size:14px;
+    color:#505050;
+    border-radius:5px;
+    box-shadow:2px 2px 4px #42424242;
+}
