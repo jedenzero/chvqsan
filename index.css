@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'Kpwb';
+    font-style:normal;
+    font-weight:400;
+    src:local('KoPubWorldBatang'),
+        url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Batang-Medium.woff2') format('woff2'),
+}
+@font-face {
+    font-family:'Kpwb';
+    font-style:normal;
+    font-weight:700;
+    src:local('KoPubWorldBatang'),
+        url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Batang-Bold.woff2') format('woff2'),
+}
+body{
+    margin:0;
+    padding:20px;
+    background-color:#FAFAFA;
+    color:#424242;
+    font-family:'Kpwb';
+}
+p{
+    padding:0;
+    margin-bottom:20px;
+}
