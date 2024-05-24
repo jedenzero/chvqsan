@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap');
+@font-face {
+    font-family:'Kpwb';
+    font-style:normal;
+    font-weight:300;
+    src:local('KoPubWorldBatang'),
+        url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Batang-Light.woff2') format('woff2'),
+}
 @font-face {
     font-family:'Kpwb';
     font-style:normal;
@@ -6,22 +13,15 @@
     src:local('KoPubWorldBatang'),
         url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Batang-Medium.woff2') format('woff2'),
 }
-@font-face {
-    font-family:'Kpwb';
-    font-style:normal;
-    font-weight:700;
-    src:local('KoPubWorldBatang'),
-        url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Batang-Bold.woff2') format('woff2'),
-}
 body{
     margin:0;
     padding:20px;
     background-color:#FAFAFA;
     color:#424242;
-    font-family:'Noto Serif TC','Kpwb';
+    font-family:'Kpwb','Noto Serif TC';
 }
 pre{
     padding:0;
     margin-bottom:20px;
-    font-family:'Noto Serif TC','Kpwb';
+    font-family:'Kpwb','Noto Serif TC';
 }
