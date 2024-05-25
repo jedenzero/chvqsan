@@ -26,12 +26,12 @@ pre{
     font-family:'Kpwb','Noto Serif TC';
 }
 .showing{
-    color:#424242:
+    color:#424242;
 }
-.showing:hover,.showing:focus{
+.showing:hover,.showing:active{
     color:#50C896;
 }
-.showing:hover,.showing:focus+.box>.showed{
+.showing:hover,.showing:active+.box>.showed{
     display:block;
     position:relative;
     top:15px;
