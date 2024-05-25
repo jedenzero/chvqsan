@@ -33,7 +33,7 @@ pre{
 }
 .showing:hover,.showing:active+.showed{
     display:block;
-    position:sticky;
+    position:fixed;
     bottom: 10dvh;
     margin:0 auto;
     width:200px;
