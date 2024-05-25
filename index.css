@@ -31,33 +31,22 @@ pre{
 .showing:hover,.showing:active{
     color:#50C896;
 }
-.showing:hover,.showing:active+.box>.showed{
+.showing:hover,.showing:active+.showed{
     display:block;
-    position:relative;
-    top:15px;
-    left:0;
-    background-color:#FAFAFAC8;
+    position:sticky;
+    bottom: 10dvh;
+    margin:0 auto;
+    width:200px;
     padding:5px;
+    background-color:#FAFAFAC8;
     font-size:14px;
     color:#505050;
     border-radius:5px;
     box-shadow:2px 2px 4px #42424242;
 }
-.showed{
+:not(.showed):hover .showed{
     display:none;
 }
-.showed:hover{
-    display:block;
-    position:absolute;
-    top:15px;
-    left:0;
-    background-color:#FAFAFA;
-    padding:5px;
-    font-size:14px;
-    color:#505050;
-    border-radius:5px;
-    box-shadow:2px 2px 4px #42424242;
-}
-.box{
-    position:absolute;
+:not(.showed):hover~.showed{
+    display:none;
 }
