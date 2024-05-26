@@ -1,34 +1,35 @@
 target=null;
+hover=0;
 for(i of document.querySelectorAll('.showing')){
   i.addEventListener('mouseenter',footnote_hover);
   i.addEventListener('click',footnote);
   i.addEventListener('touchstart',footnote);
-  
-  i.addEventListener('mouseleave',reset_hover);
-  document.addEventListener('click',()=>reset(i));
-  document.addEventListener('touchstart',()=>reset(i));
+  i.addEventListener('mouseenter',reset);
+  i.addEventListener('mouseleave',reset);
 }
+document.addEventListener('click',reset);
+document.addEventListener('touchstart',reset);
+
 function footnote_hover(){
   this.className='showing-clicked';
   this.nextSibling.className='showed-visible';
   target=this;
-}
-function reset_hover(){
-  if(target===this){
-    this.className='showing';
-    this.nextSibling.className='showed';
-    console.log('reset-hv');
-  }
+  hover=1;
 }
 function footnote(event){
+  event.stopPropagation();
   this.className='showing-clicked';
   this.nextSibling.className='showed-visible';
   target=this;
+  hover=0;
 }
-function reset(This){
-  if(target===This){
-    This.className='showing';
-    This.nextSibling.className='showed';
-    console.log('reset');
+function reset(event){
+  for(i of document.querySelectorAll('.showed-visible')){
+    if((event.type==='mouseenter'&&target.nextSibling===i)||(event.type==='mouseleave'&&hover===0&&target.nextSibling===i)){
+      continue;
+    }
+      i.previousSibling.className='showing';
+      i.className='showed';
+      console.log('reset');
   }
 }
