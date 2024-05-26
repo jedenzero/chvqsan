@@ -28,10 +28,13 @@ pre{
 .showing{
     color:#424242;
 }
-.showing:hover,.showing:active{
+.showing:hover{
     color:#50C896;
 }
-.showing:hover,.showing:active+.showed{
+.showing-clicked{
+    color:#50C896;
+}
+.showed-visible{
     display:block;
     position:fixed;
     bottom: 10dvh;
@@ -44,9 +47,6 @@ pre{
     border-radius:5px;
     box-shadow:2px 2px 4px #42424242;
 }
-:not(.showed):hover .showed{
-    display:none;
-}
-:not(.showed):hover~.showed{
+.showed-hidden{
     display:none;
 }
